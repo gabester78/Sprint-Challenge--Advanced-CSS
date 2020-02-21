@@ -1,1 +1,34 @@
 // Mixins Here
+
+.backgdcolor{
+    background-color: @wild-sand;
+}
+
+.linkstyle{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: @ebony-clay;
+    margin:0px 20px;
+}
+
+.botbtn(@bgcolor,@color){
+    cursor: pointer;
+    width:95px;
+    height: 35px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border-style: none;
+    padding:9px 0px;
+    text-align: center;
+    background-color: @bgcolor;
+    color:@color;
+    transition: all 0.5s;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);	
+
+    // &:hover{ <----commented out for stretch goal animation, but shown to meet mvp requirements
+    //     background-color:@color;
+    //     color:@bgcolor;
+    //     border:1px solid @bgcolor;
+    // }
+}

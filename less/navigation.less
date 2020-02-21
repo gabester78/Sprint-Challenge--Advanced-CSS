@@ -8,6 +8,16 @@
     margin: 0 auto;
     padding:20px;
     .backgdcolor();
+    animation: pulse 5s infinite;
+
+    @keyframes pulse {
+        0% {
+          background-color: skyblue;
+        }
+        100% {
+          background-color:@wild-sand;
+        }
+      }
 
         h1{
             font-size: 4rem;

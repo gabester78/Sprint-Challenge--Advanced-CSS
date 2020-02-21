@@ -176,6 +176,15 @@ p {
   margin: 0 auto;
   padding: 20px;
   background-color: #F6F6F6;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: skyblue;
+  }
+  100% {
+    background-color: #F6F6F6;
+  }
 }
 .navbar h1 {
   font-size: 4rem;

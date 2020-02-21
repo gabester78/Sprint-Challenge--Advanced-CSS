@@ -1,1 +1,31 @@
 // Mixins Here
+
+.backgdcolor{
+    background-color: @wild-sand;
+}
+
+.linkstyle{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: @ebony-clay;
+    margin:0px 25px;
+}
+
+.botbtn(@bgcolor,@color){
+    background-color:@bgcolor;
+    cursor: pointer;
+    width:95px;
+    height: 35px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border-style: none;
+    color:@color;
+    padding:6px 0px;
+    text-align: center;
+
+    &:hover{
+        background-color:@color;
+        color:@bgcolor;
+        border:1px solid @bgcolor;
+    }
+}

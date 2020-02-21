@@ -8,24 +8,27 @@
     font-size: 1.8rem;
     text-decoration: none;
     color: @ebony-clay;
-    margin:0px 25px;
+    margin:0px 20px;
 }
 
 .botbtn(@bgcolor,@color){
-    background-color:@bgcolor;
     cursor: pointer;
     width:95px;
     height: 35px;
     font-size: 1.8rem;
     border-radius: 5px;
     border-style: none;
-    color:@color;
-    padding:6px 0px;
+    padding:9px 0px;
     text-align: center;
+    background-color: @bgcolor;
+    color:@color;
+    transition: all 0.5s;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);	
 
-    &:hover{
-        background-color:@color;
-        color:@bgcolor;
-        border:1px solid @bgcolor;
-    }
+    // &:hover{ <----commented out for stretch goal animation, but shown to meet mvp requirements
+    //     background-color:@color;
+    //     color:@bgcolor;
+    //     border:1px solid @bgcolor;
+    // }
 }

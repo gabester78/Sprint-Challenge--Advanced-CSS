@@ -12,7 +12,7 @@
 
     @keyframes pulse {
         0% {
-          background-color: skyblue;
+          background-color:@btn-bg-color;
         }
         100% {
           background-color:@wild-sand;
@@ -22,6 +22,9 @@
         h1{
             font-size: 4rem;
             margin-bottom: 20px;
+            -webkit-text-stroke: .5px @wild-sand;
+            text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4),
+            -1px -3px 5px #ffffff;
         }
 
         a{
@@ -29,7 +32,8 @@
         }
 
         a:hover{
-            color:gold;
+            color:orange;
+            -webkit-text-stroke:none;
         }
 
 }
